@@ -1,0 +1,64 @@
+
+
+img{
+    width: 50%;
+}
+
+h5{
+    color: white;
+    font-size: small;
+    
+}
+
+ion-toolbar{
+    --background:black;
+    padding: 10px;
+    align-items: center;
+    height: 80px;
+}
+
+.formulario{
+    padding: 20px;
+    text-align: center;
+}
+
+ion-button{
+    margin-top:10% ;
+    --background:black;
+    transition: transform 0.2s;
+}
+
+ion-button:hover{
+    --background:#ffb800;
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+
+     
+}
+
+a:hover{
+    color: #ffb800;
+}
+
+h1{
+    text-align: center;
+}
+
+ion-card-title{
+    text-align: center;
+}
+
+ion-card-content p{
+    padding: 10px;
+}
+
+ion-footer{
+    --background:black;
+}
+
+ion-footer img{
+    width: 200%;
+}

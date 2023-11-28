@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div slot="end">
+      <img src="assets/imagenes/iconoDuoc.png" alt="">
+      <h5><i>Información del Clima Actual</i></h5>
+    </div>
+  <ion-buttons slot="start">
+    <ion-menu-button style="color: white;"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar> 
+</ion-header>
+
+<ion-content >
+  <ion-card *ngFor="let data of weatherData">
+    <div class="cabeza">
+      <div class="icono">
+        <img [src]="getWeatherIconUrl(data.weather[0].icon)" alt="Icono del Clima" />
+      </div>
+      <ion-card-header>
+        <div class="title">
+          <ion-card-title>{{ data.name }}, {{ data.sys.country }}</ion-card-title>
+        </div>
+      </ion-card-header>
+    </div>
+    <ion-card-content>
+      <div class="info">
+        <p>Temperatura: {{ data.main.temp }}°C</p>
+        <p>Humedad: {{ data.main.humidity }}%</p>
+        <p>Viento: {{ data.wind.speed }} km/h</p>
+      </div>
+      <div class="info2" >
+        <p>{{ currentDay }}, {{currentTime}}</p>
+        <p>{{ currentDate}}</p>
+        <p>{{ data.weather[0].main}}</p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

@@ -1,0 +1,73 @@
+
+
+img{
+    width: 50%;
+}
+
+h5{
+    color: white;
+    font-size: small;
+    
+}
+
+ion-toolbar{
+    --background:black;
+    padding: 10px;
+    align-items: center;
+    height: 80px;
+}
+
+.formulario{
+    padding: 10px;
+    
+    text-align: center;
+}
+
+.botones{
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ion-button{
+    --background:black;
+    transition: transform 0.2s;
+}
+
+ion-button:hover{
+    --background:#ffb800;
+    transform: scale(1.1);
+}
+
+h1{
+    text-align: center;
+}
+
+ion-footer{
+    --background:black; 
+}
+
+ion-footer img{
+    width: 200%;
+}
+
+.word-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: smaller;
+    color: red;
+    animation: moveWords 5s linear infinite;
+}
+
+.moving-word {
+    padding-right: 20px;
+}
+
+
+.moving-image{
+    padding-right: 20px; 
+}
+

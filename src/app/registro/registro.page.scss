@@ -1,0 +1,67 @@
+ 
+
+ion-toolbar img{
+    width: 50%;
+}
+
+ion-card-header{
+    display: flex;
+}
+
+#img{
+    width: 100%;
+    margin-top: -40px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+form {
+    padding: 10px;
+
+}
+
+h5{
+    color: white;
+    font-size: small; 
+
+    
+}
+
+ion-button:hover{
+    --background:#ffb800;
+    transform: scale(1.1);
+} 
+
+ion-toolbar{
+    --background:black;
+    padding: 10px;
+    align-items: center;
+}
+
+
+ion-card-title{
+    text-align: center;
+}
+
+ion-button{
+    margin-top:10% ;
+    width: 100%;
+    --background:black;
+    transition: transform 0.2s;
+}
+
+ion-button:hover{
+    --background:#ffb800;
+    transform: scale(1.1);
+} 
+
+ion-footer{
+    --background:black;
+}
+
+ion-footer img{
+    width: 200%;
+}
+

@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img src="assets/imagenes/iconoDuoc.png" alt="">
+    <h5><i>Asistencia Alumnos</i></h5>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-card-header>
+      <ion-card-title><b>Create una Cuenta</b></ion-card-title>
+    </ion-card-header>
+
+      <form [formGroup]="formularioLogin">
+        <ion-item lines="full">
+          <ion-label position="floating">Nombre de Usuario</ion-label>
+          <ion-input formControlName="nombre" type="text" required=""></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="floating">Correo Electronico</ion-label>
+          <ion-input formControlName="email" type="email" required=""></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="contrasena" type="password" required=""></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Confirmar Contraseña</ion-label>
+          <ion-input formControlName="confirmar_contrasena" type="password" required=""></ion-input>
+        </ion-item>
+
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit"  expand="block" (click)="registrar()">REGISTRAR</ion-button>
+            <ion-button type="submit"  expand="block" (click)="ingresar()">VOLVER</ion-button>
+          </ion-col>
+        </ion-row>
+
+      </form>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <img src="assets/imagenes/footer.png" alt="">
+  </ion-toolbar>
+</ion-footer>

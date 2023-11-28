@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img src="assets/imagenes/iconoDuoc.png" alt="">
+    <h5><i>Asistencia Alumnos Restablecer</i></h5>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+    <h1>Restablecer Contraseña</h1>
+    <form class="formulario">
+      <ion-item>
+        <ion-label position="floating">Ingrese su Usuario</ion-label>
+        <ion-input type="text" name="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Ingrese su correo institucional</ion-label>
+        <ion-input type="mail" name="mail" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Ingrese su número de telefono</ion-label>
+        <ion-input type="número" name="número" ></ion-input>
+      </ion-item>
+    </form>
+    <div class="botones">
+      <a href="/rcontrasena"><ion-button expand="full" type="submit">Enviar</ion-button></a>
+    </div>
+</ion-content>
+<br>
+<br>
+<br>
+<br>
+<ion-content>
+  <div #titulo class="word-container" >
+    <span class="moving-word">¡No te rindas!</span>
+    <span class="moving-word">¡Aun puedes Recuperar tu Contraseña!</span>
+</div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <img src="assets/imagenes/footer.png" alt="">
+  </ion-toolbar>
+</ion-footer>

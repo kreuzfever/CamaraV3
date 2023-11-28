@@ -1,0 +1,50 @@
+ 
+img{
+    width: 50%;
+}
+
+ion-menu-button {
+    --color: white;
+  }
+
+ion-toolbar{
+    --background:black;
+    padding: 10px;
+    align-items: center;
+    height: auto;
+}
+
+
+.qr{
+    text-align: center;
+    margin-top: 20%;
+    padding: 30px;
+}
+
+.qr img{
+    width: 70%;
+}
+
+ion-button{
+    
+    margin-top:10% ;
+    --background:black;
+    transition: transform 0.2s;
+}
+
+ion-button:hover{
+    --background:#ffb800;
+    transform: scale(1.1);
+} 
+
+a{
+    text-decoration: none;
+}
+
+ion-footer{
+    --background:black;
+}
+
+ion-footer img{
+    width: 200%;
+}

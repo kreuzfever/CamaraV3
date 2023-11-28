@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <div slot="end">
+        <img src="assets/imagenes/iconoDuoc.png" alt="">
+      </div>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar> 
+</ion-header>
+    <div class="melipilla">
+      <img src="assets/imagenes/melipilla.jpg" alt="">
+
+    </div> 
+<ion-content>
+  <div class="contenido"> 
+    <ion-card-header>
+      <ion-card-title #titulo class="titulo"><b>¡Bienvenido/a {{nombreUsuario}}!</b></ion-card-title>
+    </ion-card-header> 
+    <ion-button (click)="tomarCaptura()" type="button">Registrar Asistencia</ion-button>
+  </div>
+  <div class="manzana">
+    <img src="assets/imagenes/manzana.gif" alt=""> 
+  </div> 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <img src="assets/imagenes/footer.png" alt="">
+  </ion-toolbar>
+</ion-footer>

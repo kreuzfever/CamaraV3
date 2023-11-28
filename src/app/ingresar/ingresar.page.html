@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img src="assets/imagenes/iconoDuoc.png" alt="">
+    <h5><i>Asistencia Alumnos</i></h5>
+  </ion-toolbar>
+</ion-header>
+
+ 
+<ion-content [fullscreen]="true">
+  <div class="robot">
+    <img id="movable-image" src="assets/imagenes/robot.gif" alt="Imagen en movimiento" class="moving-image">
+  </div>
+  <h1><b>Iniciar Sesión</b></h1>
+  <form [formGroup]="formularioLogin" class="formulario">
+    <ion-item>
+      <ion-label position="floating">Correo electrónico o Nombre de Usuario</ion-label> 
+      <ion-input formControlName="usuarioEmail" type="text" required=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input formControlName="contrasena" type="password" required=""></ion-input>
+    </ion-item>  
+    <br>
+    <a (click)="restablecer()">¿Olvidaste tu Contraseña?</a>
+    <br>
+    <ion-button (click)="ingresar()" type="button">Ingresar</ion-button>
+    <ion-button (click)="registro()" type="button">Registrar</ion-button>
+
+  </form>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <img src="assets/imagenes/footer.png" alt="">
+  </ion-toolbar>
+</ion-footer>
